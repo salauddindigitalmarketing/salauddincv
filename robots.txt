@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://salauddincv.netlify.app/sitemap.xml
+Sitemap: https://salauddinahmed.netlify.app/sitemap.xml
