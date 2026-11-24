@@ -246,6 +246,7 @@
       <a href="#services" class="nav-link" data-nav>Services</a>
       <a href="#skills" class="nav-link" data-nav>Skills</a>
       <a href="#projects" class="nav-link" data-nav>Projects</a>
+      <a href="/blog/" class="nav-link" data-nav>Blog</a>
       <a href="#contact" class="nav-link" data-nav>Contact</a>
     </nav>
 
@@ -390,7 +391,7 @@
 
       <!-- CHANGE YOUR ABOUT TEXT HERE -->
       <p class="about__text">
-        I'm a Digital Marketing Specialist based in Mirpur, Dhaka, Bangladesh, with 4.3+ years
+        I'm a Digital Marketing Specialist based in Mirpur, Dhaka, Bangladesh, with 4+ years
         of experience. I currently work at Ahmed Food Products (Pvt) Ltd, where I lead SEO, Google
         Ads and Meta Ads campaigns and manage a marketing team. Before that, I worked at South
         Wind Engineering Ltd.
@@ -773,12 +774,9 @@
       </div>
     </div>
 
-    <!-- Frontend-only form — no backend is connected. -->
-    <form class="contact__form" id="contactForm" data-reveal novalidate>
-      <p class="form-note">
-        <i class="ph ph-info"></i>
-        This form is front-end only — it does not send data anywhere. Connect
-        it to your own backend or a service like Formspree to receive messages.
+    <form class="contact__form" id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-reveal novalidate>
+      <p hidden>
+        <label>Don't fill this out if you're human: <input name="bot-field"></label>
       </p>
 
       <div class="form-row">
@@ -834,6 +832,7 @@
       <a href="#services">Services</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
+      <a href="/blog/">Blog</a>
       <a href="#contact">Contact</a>
     </div>
 

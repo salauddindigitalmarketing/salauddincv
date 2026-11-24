@@ -44,4 +44,28 @@
         <priority>0.8</priority>
     </url>
 
+    <url>
+        <loc>https://salauddinahmed.netlify.app/blog/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://salauddinahmed.netlify.app/blog/seo-for-small-businesses-dhaka.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://salauddinahmed.netlify.app/blog/google-ads-vs-meta-ads-bangladesh.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <url>
+        <loc>https://salauddinahmed.netlify.app/blog/how-to-choose-digital-marketer-dhaka.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>
