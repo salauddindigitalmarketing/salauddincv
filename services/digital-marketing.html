@@ -53,10 +53,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet"
-  >
+   media="print" onload="this.media='all'">
 
   <!-- Phosphor Icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
   <!-- Main Portfolio CSS -->
   <link rel="stylesheet" href="../style.css">
@@ -64,10 +64,7 @@
   <!-- Digital Marketing Page CSS -->
   <link rel="stylesheet" href="digital-marketing.css">
   <script src="../services/digital-marketing.js" defer></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
->
+  
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSJKY06XP"></script>
 <script>
@@ -84,6 +81,8 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "y46p5qlv2h");
 </script>
+<link rel="icon" type="image/png" href="/image/favicons.png">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=75" fetchpriority="high">
 </head>
 
 <body>
@@ -268,10 +267,10 @@
             <div class="dm-hero__image-wrap">
 
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=75"
                 alt="Digital marketing analytics dashboard"
                 class="dm-hero__image"
-              >
+               width="1200" height="800" fetchpriority="high">
 
               <div class="dm-hero__image-label">
                 <span>MARKETING PERFORMANCE</span>
@@ -554,9 +553,9 @@
 
             <div class="dm-project__image">
               <img
-                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1600&q=85"
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=75"
                 alt="Digital marketing campaign analytics project"
-              >
+               width="1200" height="855" loading="lazy" decoding="async">
 
               <span class="dm-project__label">
                 PAID MEDIA
@@ -609,9 +608,9 @@
 
             <div class="dm-project__image">
               <img
-                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=75"
                 alt="Google advertising campaign workspace"
-              >
+               width="1200" height="800" loading="lazy" decoding="async">
 
               <span class="dm-project__label">
                 GOOGLE ADS
@@ -645,9 +644,9 @@
 
             <div class="dm-project__image">
               <img
-                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=75"
                 alt="Social media marketing campaign project"
-              >
+               width="1200" height="900" loading="lazy" decoding="async">
 
               <span class="dm-project__label">
                 SOCIAL MEDIA
@@ -681,9 +680,9 @@
 
             <div class="dm-project__image">
               <img
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=85"
+                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=75"
                 alt="Marketing analytics and reporting dashboard"
-              >
+               width="1200" height="800" loading="lazy" decoding="async">
 
               <span class="dm-project__label">
                 ANALYTICS
@@ -1093,7 +1092,7 @@
     rel="noopener noreferrer"
     aria-label="Chat with me on WhatsApp"
 >
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="ph ph-whatsapp-logo"></i>
 </a>
 
 </body>

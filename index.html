@@ -30,18 +30,15 @@
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
 <!-- Icons (Phosphor Icons via CDN) -->
-<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 
-<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
->
+
     <meta name="google-site-verification" content="43lZ6LQ1YnIkAFoqwxRIb2faViPpXyGkipnwsSQLVPw" />
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSJKY06XP"></script>
@@ -283,6 +280,7 @@
 }
 </script>
 
+<link rel="preload" as="image" href="image/personal-image.jpg" fetchpriority="high">
 </head>
 <body>
 
@@ -390,7 +388,7 @@
           src="image/personal-image.jpg"
           alt="Portrait of Salauddin Ahmed"
           class="hero__image"
-          width="480" height="560">
+          width="480" height="560" fetchpriority="high">
         <div class="hero__ring" aria-hidden="true"></div>
       </div>
 
@@ -819,7 +817,7 @@
 
       <article class="project-card project-card--large" data-category="marketing" data-reveal>
         <div class="project-card__image-wrap">
-          <img src="image/project-link-clicks.jpg" alt="Meta Ads Manager screenshot showing 3,951 link clicks at ৳0.50 per click" loading="lazy" decoding="async">
+          <img src="image/project-link-clicks.jpg" alt="Meta Ads Manager screenshot showing 3,951 link clicks at ৳0.50 per click" loading="lazy" decoding="async" width="1200" height="504">
           <span class="project-card__number">01</span>
         </div>
         <div class="project-card__body">
@@ -832,7 +830,7 @@
 
       <article class="project-card" data-category="marketing" data-reveal>
         <div class="project-card__image-wrap">
-          <img src="image/project-messenger-conversations.jpg" alt="Meta Ads Manager screenshot showing 288 messaging conversations started at ৳12.84 each" loading="lazy" decoding="async">
+          <img src="image/project-messenger-conversations.jpg" alt="Meta Ads Manager screenshot showing 288 messaging conversations started at ৳12.84 each" loading="lazy" decoding="async" width="1200" height="499">
           <span class="project-card__number">02</span>
         </div>
         <div class="project-card__body">
@@ -845,7 +843,7 @@
 
       <article class="project-card" data-category="marketing" data-reveal>
         <div class="project-card__image-wrap">
-          <img src="image/project-thruplays.jpg" alt="Meta Ads Manager screenshot showing 20,080 ThruPlays at $0.002 each" loading="lazy" decoding="async">
+          <img src="image/project-thruplays.jpg" alt="Meta Ads Manager screenshot showing 20,080 ThruPlays at $0.002 each" loading="lazy" decoding="async" width="1200" height="500">
           <span class="project-card__number">03</span>
         </div>
         <div class="project-card__body">
@@ -858,7 +856,7 @@
 
       <article class="project-card project-card--large" data-category="marketing" data-reveal>
         <div class="project-card__image-wrap">
-          <img src="image/project-leads-campaigns.jpg" alt="Meta Ads Manager campaigns table with client names blurred" loading="lazy" decoding="async">
+          <img src="image/project-leads-campaigns.jpg" alt="Meta Ads Manager campaigns table with client names blurred" loading="lazy" decoding="async" width="1400" height="482">
           <span class="project-card__number">04</span>
         </div>
         <div class="project-card__body">
@@ -1085,7 +1083,7 @@
     rel="noopener noreferrer"
     aria-label="Chat with me on WhatsApp"
 >
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="ph ph-whatsapp-logo"></i>
 </a>
 </body>
 </html>

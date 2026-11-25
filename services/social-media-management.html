@@ -53,10 +53,10 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet"
-  >
+   media="print" onload="this.media='all'">
 
   <!-- Phosphor Icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
   <!-- Main Portfolio CSS -->
   <link rel="stylesheet" href="../style.css">
@@ -64,10 +64,7 @@
   <!-- Page CSS -->
   <link rel="stylesheet" href="social-media-management.css">
   <script src="../services/social-media-management.js" defer></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
->
+  
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSJKY06XP"></script>
 <script>
@@ -84,6 +81,8 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "y46p5qlv2h");
 </script>
+<link rel="icon" type="image/png" href="/image/favicons.png">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=300&q=80" fetchpriority="high">
 </head>
 
 <body>
@@ -287,7 +286,7 @@
                     <img
                       src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=300&q=80"
                       alt="Social media brand campaign sample"
-                    >
+                     width="300" height="225" fetchpriority="high">
                   </div>
 
                   <div>
@@ -312,9 +311,9 @@
                 <div class="social-post">
 
                   <img
-                    src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=900&q=85"
+                    src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=900&q=75"
                     alt="Social media marketing campaign sample"
-                  >
+                   width="900" height="506" loading="lazy" decoding="async">
 
                   <div class="social-post__overlay">
 
@@ -676,9 +675,9 @@
             <div class="social-project__image">
 
               <img
-                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1600&q=85"
+                src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=75"
                 alt="Social media content design project"
-              >
+               width="1200" height="1500" loading="lazy" decoding="async">
 
               <span class="social-project__label">
                 CONTENT CAMPAIGN
@@ -733,9 +732,9 @@
             <div class="social-project__image">
 
               <img
-                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=75"
                 alt="Instagram social media campaign sample"
-              >
+               width="1200" height="900" loading="lazy" decoding="async">
 
               <span class="social-project__label">
                 SOCIAL CAMPAIGN
@@ -770,9 +769,9 @@
             <div class="social-project__image">
 
               <img
-                src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=85"
+                src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?auto=format&fit=crop&w=1200&q=75"
                 alt="Social media advertising campaign sample"
-              >
+               width="1200" height="900" loading="lazy" decoding="async">
 
               <span class="social-project__label">
                 PAID SOCIAL
@@ -808,9 +807,9 @@
             <div class="social-project__image">
 
               <img
-                src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=1600&q=85"
+                src="https://images.unsplash.com/photo-1557838923-2985c318be48?auto=format&fit=crop&w=1200&q=75"
                 alt="Social media analytics campaign dashboard"
-              >
+               width="1200" height="675" loading="lazy" decoding="async">
 
               <span class="social-project__label">
                 ANALYTICS
@@ -1575,7 +1574,7 @@
     rel="noopener noreferrer"
     aria-label="Chat with me on WhatsApp"
 >
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="ph ph-whatsapp-logo"></i>
 </a>
 </body>
 </html>
