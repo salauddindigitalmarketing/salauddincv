@@ -53,20 +53,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet"
-  >
+   media="print" onload="this.media='all'">
 
   <!-- Phosphor Icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
   <!-- Main CSS -->
   <link rel="stylesheet" href="../style.css">
 
   <!-- Page CSS -->
   <link rel="stylesheet" href="branding-design.css">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
->
+  
 <script src="../services/brand-design.js" defer></script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSJKY06XP"></script>
@@ -86,6 +83,7 @@
 </script>
 
 <link rel="icon" type="image/png" href="/image/favicons.png">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=75" fetchpriority="high">
 </head>
 
 <body>
@@ -291,7 +289,7 @@
                   <img
                     src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=75"
                     alt="Brand identity and graphic design project sample"
-                   width="1200" height="1500">
+                   width="1200" height="1500" fetchpriority="high">
 
                   <div class="brand-board__image-label">
                     VISUAL IDENTITY
@@ -678,7 +676,7 @@
               <img
                 src="https://images.unsplash.com/photo-1634942537034-2531766767d1?auto=format&fit=crop&w=1200&q=75"
                 alt="Premium brand identity design project sample"
-               width="1200" height="1200">
+               width="1200" height="1200" loading="lazy" decoding="async">
 
               <span class="branding-project__label">
                 BRAND IDENTITY
@@ -728,7 +726,7 @@
               <img
                 src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=1200&q=75"
                 alt="Graphic design and branding project"
-               width="1200" height="1500">
+               width="1200" height="1500" loading="lazy" decoding="async">
 
               <span class="branding-project__label">
                 CREATIVE
@@ -768,7 +766,7 @@
               <img
                 src="https://images.unsplash.com/photo-1600508774634-4e11d34730e2?auto=format&fit=crop&w=1200&q=75"
                 alt="Packaging branding design project sample"
-               width="1200" height="800">
+               width="1200" height="800" loading="lazy" decoding="async">
 
               <span class="branding-project__label">
                 PACKAGING
@@ -808,7 +806,7 @@
               <img
                 src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?auto=format&fit=crop&w=1200&q=75"
                 alt="Social media branding design project sample"
-               width="1200" height="1500">
+               width="1200" height="1500" loading="lazy" decoding="async">
 
               <span class="branding-project__label">
                 SOCIAL DESIGN
@@ -1548,7 +1546,7 @@
     rel="noopener noreferrer"
     aria-label="Chat with me on WhatsApp"
 >
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="ph ph-whatsapp-logo"></i>
 </a>
 
 </body>

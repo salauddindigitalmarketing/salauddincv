@@ -52,9 +52,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
     rel="stylesheet"
-  >
+   media="print" onload="this.media='all'">
 
-  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
   <!-- Main Website CSS -->
   <link rel="stylesheet" href="../style.css">
@@ -62,10 +62,7 @@
   <!-- Content Strategy Page CSS -->
   <link rel="stylesheet" href="content-strategy.css">
   <script src="../services/content-strategy.js" defer></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
->
+  
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RYSJKY06XP"></script>
 <script>
@@ -83,6 +80,7 @@
     })(window, document, "clarity", "script", "y46p5qlv2h");
 </script>
 <link rel="icon" type="image/png" href="/image/favicons.png">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=75" fetchpriority="high">
 </head>
 
 <body>
@@ -289,7 +287,7 @@
                   <img
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=75"
                     alt="Content strategy planning project sample"
-                   width="1200" height="800">
+                   width="1200" height="800" fetchpriority="high">
 
                   <div class="strategy-board__image-label">
                     CONTENT PLANNING
@@ -680,7 +678,7 @@
               <img
                 src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=75"
                 alt="Content strategy campaign planning sample"
-               width="1200" height="800">
+               width="1200" height="800" loading="lazy" decoding="async">
 
               <span class="content-project__label">
                 CONTENT STRATEGY
@@ -730,7 +728,7 @@
               <img
                 src="https://images.unsplash.com/photo-1553484771-371a605b060b?auto=format&fit=crop&w=1200&q=75"
                 alt="Editorial content planning project sample"
-               width="1200" height="800">
+               width="1200" height="800" loading="lazy" decoding="async">
 
               <span class="content-project__label">
                 CONTENT PLAN
@@ -771,7 +769,7 @@
               <img
                 src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=75"
                 alt="SEO content strategy project sample"
-               width="1200" height="800">
+               width="1200" height="800" loading="lazy" decoding="async">
 
               <span class="content-project__label">
                 SEO CONTENT
@@ -812,7 +810,7 @@
               <img
                 src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=1200&q=75"
                 alt="Social media content strategy project sample"
-               width="1200" height="900">
+               width="1200" height="900" loading="lazy" decoding="async">
 
               <span class="content-project__label">
                 SOCIAL CONTENT
@@ -1670,7 +1668,7 @@
     rel="noopener noreferrer"
     aria-label="Chat with me on WhatsApp"
 >
-    <i class="fa-brands fa-whatsapp"></i>
+    <i class="ph ph-whatsapp-logo"></i>
 </a>
 
 </body>
