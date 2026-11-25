@@ -225,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* -------------------------------------------------------------
-     10. CONTACT FORM VALIDATION (frontend-only, no backend)
+     10. CONTACT FORM (validation + Netlify Forms submit)
   ------------------------------------------------------------- */
   const form = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
@@ -287,12 +287,31 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // NOTE: This is a frontend-only demo — no data is actually sent
-    // anywhere. Hook this up to your own backend or a service like
-    // Formspree / EmailJS to receive real messages.
-    formStatus.textContent = `Thanks, ${name.split(' ')[0]}! Your message looks great — connect a backend to actually send it.`;
-    formStatus.className = 'form-status success';
-    form.reset();
+    // Send the message to Netlify Forms (the form carries data-netlify="true").
+    // Netlify captures the submission and notifies the site owner by email.
+    const submitBtn = form.querySelector('button[type="submit"]');
+    if (submitBtn) submitBtn.disabled = true;
+    formStatus.textContent = 'Sending your message...';
+    formStatus.className = 'form-status';
+
+    const body = new URLSearchParams(new FormData(form));
+    body.set('form-name', 'contact');
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString()
+    }).then((response) => {
+      if (!response.ok) throw new Error('Network response was not ok');
+      formStatus.textContent = `Thanks, ${name.split(' ')[0]}! Your message has been sent — I'll get back to you soon.`;
+      formStatus.className = 'form-status success';
+      form.reset();
+    }).catch(() => {
+      formStatus.textContent = 'Sorry, something went wrong — please email me directly at salauddiny16@gmail.com.';
+      formStatus.className = 'form-status error';
+    }).finally(() => {
+      if (submitBtn) submitBtn.disabled = false;
+    });
   });
 
 
@@ -322,16 +341,20 @@ document.addEventListener("mousemove", (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
 
-    cursorDot.style.left = `${mouseX}px`;
-    cursorDot.style.top = `${mouseY}px`;
+    if (cursorDot) {
+        cursorDot.style.left = `${mouseX}px`;
+        cursorDot.style.top = `${mouseY}px`;
+    }
 });
 
 function animateCursor() {
     outlineX += (mouseX - outlineX) * 0.15;
     outlineY += (mouseY - outlineY) * 0.15;
 
-    cursorOutline.style.left = `${outlineX}px`;
-    cursorOutline.style.top = `${outlineY}px`;
+    if (cursorOutline) {
+        cursorOutline.style.left = `${outlineX}px`;
+        cursorOutline.style.top = `${outlineY}px`;
+    }
 
     requestAnimationFrame(animateCursor);
 }
