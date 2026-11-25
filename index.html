@@ -33,7 +33,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
 <!-- Icons (Phosphor Icons via CDN) -->
-<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
 <style>
 :root {
@@ -1139,6 +1138,7 @@ section { position: relative; }
 .faq__item a:hover { text-decoration: underline; }
 </style>
 <script src="script.js" defer></script>
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
 
 
     <meta name="google-site-verification" content="43lZ6LQ1YnIkAFoqwxRIb2faViPpXyGkipnwsSQLVPw" />
@@ -1382,7 +1382,7 @@ section { position: relative; }
 }
 </script>
 
-<link rel="preload" as="image" href="image/personal-image.webp" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" imagesrcset="image/personal-image.webp" imagesizes="480px" fetchpriority="high">
 </head>
 <body>
 
@@ -1435,7 +1435,7 @@ section { position: relative; }
 
   <div class="container hero__inner">
 
-    <div class="hero__content" data-reveal>
+    <div class="hero__content">
       <span class="badge">
         <span class="badge__pulse"></span>
         Available for freelance projects
@@ -1483,7 +1483,7 @@ section { position: relative; }
       </div>
     </div>
 
-    <div class="hero__visual" data-reveal>
+    <div class="hero__visual">
       <div class="hero__image-frame">
         <!-- CHANGE YOUR PROFILE IMAGE HERE -->
         <picture><source srcset="image/personal-image.webp" type="image/webp"><img
